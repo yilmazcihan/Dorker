@@ -1,0 +1,18 @@
+{
+    "name" : "Dorker",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description" : "Next level of google searching",
+
+    "content_scripts" : [
+        {
+            "js" : ["background.js"],
+            "css": ["extension-style.css"],
+            "matches" : ["https://www.google.fr/"]
+        }
+    ],
+    "browser_action" : {
+    "default_popup" : "index.html"
+
+  }
+}
